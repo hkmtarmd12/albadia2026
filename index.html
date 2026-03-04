@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>تراث البادية -  الأعلامية</title>
+<title>تراث البادية - الأعلامية</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -61,7 +61,8 @@ nav a:hover{color:var(--gold)}
   position: relative; transform: scale(0.9);
 }
 .close-modal { position: absolute; top: 10px; left: 15px; font-size: 25px; cursor: pointer; color: var(--gold); }
-/* ===== قسم فيديوهات اليوتيوب (جديد) ===== */
+
+/* ===== YouTube Section ===== */
 .youtube-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -74,62 +75,39 @@ nav a:hover{color:var(--gold)}
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    padding-top: 56.25%; /* نسبة أبعاد الفيديو 16:9 */
+    padding-top: 56.25%; 
 }
 .video-card iframe {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     border: none;
 }
-/* ===== قسم الأعراس (سناب ستايل) ===== */
+
+/* ===== Wedding Snap Style ===== */
 section{padding:50px 8%}
 h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.8rem;}
 
-.wedding-container {
-    padding: 20px 0;
-}
-
+.wedding-container { padding: 20px 0; }
 .wedding-strip {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    padding: 40px 10px;
+    display: flex; gap: 15px; overflow-x: auto; padding: 40px 10px;
     scroll-behavior: smooth;
 }
-/* إخفاء شريط التمرير */
 .wedding-strip::-webkit-scrollbar { display: none; }
-
 .wedding-item {
-    min-width: 220px; /* عرض طولي */
-    height: 380px;    /* ارتفاع يحاكي السناب */
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
-    cursor: pointer;
+    min-width: 220px; height: 380px; border-radius: 20px;
+    overflow: hidden; position: relative; cursor: pointer;
     border: 1px solid var(--glass-border);
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
 }
-
-.wedding-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* تأثير التكبير والتلاشي للبقية */
-.wedding-strip:hover .wedding-item {
-    opacity: 0.4; /* تلاشي الصور عند وضع الماوس على الحاوية */
-    transform: scale(0.95);
-}
-
+.wedding-item img { width: 100%; height: 100%; object-fit: cover; }
+.wedding-strip:hover .wedding-item { opacity: 0.4; transform: scale(0.95); }
 .wedding-strip .wedding-item:hover {
-    opacity: 1; /* إعادة الصورة المختارة للوضوح الكامل */
-    transform: scale(1.1); /* التكبير */
-    z-index: 10;
+    opacity: 1; transform: scale(1.1); z-index: 10;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px var(--gold);
     border-color: var(--gold);
 }
-/* ===== قسم الخدمات ===== */
+
+/* ===== Services ===== */
 .services-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; margin-top: 20px; }
 .service-item { display: flex; flex-direction: column; align-items: center; width: 100px; }
 .service-icon {
@@ -138,10 +116,7 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.8rem;}
     font-size: 22px; color: var(--gold); margin-bottom: 10px;
 }
 
-/* ===== المعارض والتمرير ===== */
-section{padding:50px 8%}
-h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.7rem;}
-
+/* ===== Scrollers ===== */
 .scroller-container { position: relative; display: flex; align-items: center; }
 .gallery-wrap { display: flex; gap: 15px; overflow-x: auto; scroll-behavior: smooth; padding: 10px 0; width: 100%; }
 .gallery-wrap::-webkit-scrollbar { display: none; }
@@ -151,18 +126,7 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.7rem;}
 }
 .gallery-wrap img:hover { transform: scale(1.05); border: 1px solid var(--gold); }
 
-#weddins {
- padding: 60px 8%; 
-    background-image: url('تراثنا2026.png'); /* خلفية النسيج البدوي الجديدة */
-    background-size: repeat-x; /* تتكرر أفقيًا لتغطية العرض */
-    background-position: center;
-    border-top: 2px solid var(--gold); /* إطار ذهبي علوي */
-    border-bottom: 2px solid var(--gold); /* إطار ذهبي سفلي */
-    position: relative;
-    box-shadow: inset 0 0 20px rgba(144, 6, 6, 0.3); /* ظل داخلي لإعطاء عمق */
-}
-
-/* ===== باقات الضيافة (تمت إعادتها) ===== */
+/* ===== Pricing & Stats ===== */
 .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 30px; }
 .pricing-card {
   background: var(--glass); border: 1px solid var(--glass-border);
@@ -171,7 +135,6 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.7rem;}
 .pricing-card:hover { border-color: var(--gold); transform: translateY(-5px); }
 .pricing-card h3 { color: var(--gold); margin-bottom: 10px; font-size: 1.2rem; }
 
-/* ===== العداد المتحرك (جديد) ===== */
 .stats-section {
     display: flex; justify-content: space-around; flex-wrap: wrap;
     background: linear-gradient(45deg, #1c0202, #300404);
@@ -181,7 +144,7 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.7rem;}
 .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--gold); display: block; }
 .stat-label { font-size: 1rem; color: #ccc; font-weight: bold; }
 
-/* ===== شريط آراء العملاء المتحرك ===== */
+/* ===== Reviews ===== */
 .reviews-marquee {
     width: 100%; overflow: hidden; background: rgba(144, 6, 6, 0.05);
     padding: 20px 0; margin-top: 40px; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);
@@ -197,27 +160,17 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.7rem;}
 }
 @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(50%); } }
 
-/* ===== Footer الجديد (لوجو + تواصل + موقع) ===== */
+/* ===== Footer ===== */
 footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-top: 1px solid var(--gold); }
-
-.footer-logo-main { margin-bottom: 35px; }
-.footer-logo-main img { 
-    max-width: 220px; 
-    filter: drop-shadow(0 0 15px rgba(235, 233, 233, 0.485));
-}
-
-.footer-social-title { color: var(--gold); font-weight: bold; margin-bottom: 25px; font-size: 1.3rem; }
+.footer-logo-main img { max-width: 220px; filter: drop-shadow(0 0 15px rgba(235, 233, 233, 0.485)); margin-bottom: 35px; }
 .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .social-links a {
     width: 55px; height: 55px; background: var(--glass); border: 1px solid var(--gold);
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
     color: #fff; font-size: 24px; text-decoration: none; transition: 0.4s;
 }
-.social-links a:hover {
-    background: var(--gold); transform: translateY(-8px); box-shadow: 0 5px 20px rgba(144, 6, 6, 0.5);
-}
+.social-links a:hover { background: var(--gold); transform: translateY(-8px); }
 
-/* ===== الأدوات ===== */
 .whatsapp {
   position: fixed; bottom: 20px; left: 20px; width: 50px; height: 50px;
   background: #25D366; border-radius: 50%; display: flex; align-items: center;
@@ -255,7 +208,7 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
 <video autoplay muted loop playsinline><source src="تراث البادية الإعلامية.mp4" type="video/mp4"></video>
 <div class="overlay"></div>
 <div class="hero-content">
-<h1>  نوثق لحظاتكم بأعلى معاير الجودة </h1>
+<h1>نوثق لحظاتكم بأعلى معاير الجودة</h1>
 <p>إبداع في التوثيق وأصالة في الضيافة</p><br>
 <a href="https://wa.me/966536239698" style="padding:10px 25px; border:1px solid var(--gold); color:#fff; text-decoration:none; border-radius:30px; background:rgba(144,6,6,0.2);">اطلب خدمتك الآن</a>
 </div>
@@ -266,9 +219,9 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
         <span class="close-modal" onclick="toggleAbout()">×</span>
         <h2>من نحن</h2>
         <p style="color: #ccc; margin-top: 15px;">
-            نحن في تراث البادية الإعلامية مؤسسة متخصصة في تغطية وتصوير المناسبات والفعاليات بمختلف أنواعها، حيث نقدم حلولاً إعلامية متكاملة وخدمات ضيافة راقية وفق أحدث معايير الجودة والاحترافية.انطلقت مؤسستنا بشغف لصناعة اللحظات الاستثنائية وتوثيقها بأعلى مستويات الإبداع، إيماناً منا      بأن لكل مناسبة قصة تستحق أن تُروى وذكرى تستحق أن تُحفظ بأجمل صورة.نحرص على تقديم تجربة متكاملة لعملائنا من خلال فريق محترف،                          وتجهيزات حديثة، وتنفيذ دقيق يضمن إبراز فعالياتكم بالشكل الذي يليق بكم ويعكس هويتكم بأفضل صورة.
-
-                   نفخر بثقة عملائنا، ونسعد دائماً بأن نكون شركاء نجاح في مناسباتهم، لنحوّل اللحظات العابرة إلى ذكريات خالدة. <strong>تراث البادية</strong>      
+        نحن في تراث البادية الإعلامية مؤسسة متخصصة في تغطية وتصوير المناسبات والفعاليات بمختلف أنواعها، حيث نقدم حلولاً إعلامية متكاملة وخدمات ضيافة راقية وفق أحدث معايير الجودة والاحترافية.انطلقت مؤسستنا بشغف لصناعة اللحظات الاستثنائية وتوثيقها بأعلى مستويات الإبداع، إيماناً منا بأن لكل مناسبة قصة تستحق أن تُروى وذكرى تستحق أن تُحفظ بأجمل صورة.نحرص على تقديم تجربة متكاملة لعملائنا من خلال فريق محترف وتجهيزات حديثة، وتنفيذ دقيق يضمن إبراز فعالياتكم بالشكل الذي يليق بكم ويعكس هويتكم بأفضل صورة.
+نفخر بثقة عملائنا، ونسعد دائماً بأن نكون شركاء نجاح في مناسباتهم، لنحوّل اللحظات العابرة إلى ذكريات خالدة.
+ <strong>تراث البادية</strong>      
         </p>
     </div>
 </div>
@@ -282,79 +235,57 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
         <div class="service-item"><div class="service-icon"><i class="fas fa-bolt"></i></div><span>إضاءة ليزر</span></div>
         <div class="service-item"><div class="service-icon"><i class="fas fa-tv"></i></div><span>شاشات </span></div>
     </div>
-    <section id="weddings">
-    <h2> معرض المناسبات </h2>
+</section>
+
+<section id="youtube-works">
+    <h2>من أعمالنا (YouTube)</h2>
+    <div class="youtube-grid">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/oNJgGB5wTHc?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/tVkXKKQ_-fg?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/BTzYWxEMO5o?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/J1C9Uyxq9q4?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section id="weddings">
+    <h2>معرض المناسبات</h2>
     <div class="wedding-container">
         <div class="wedding-strip">
-            <div class="wedding-item">
-                <img src="https://d.top4top.io/p_37103iu0w3.jpg" alt="Wedding 1">
-            </div>
-            <div class="wedding-item">
-                <img src="https://d.top4top.io/p_3709n6qab2.jpg" alt="Wedding 2">
-            </div>
-            <div class="wedding-item">
-                <img src="https://e.top4top.io/p_370919pvb3.jpg" alt="Wedding 3">
-            </div>
-            <div class="wedding-item">
-                <img src="https://g.top4top.io/p_370907clz1.jpg" alt="Wedding 4">
-            </div>
-            <div class="wedding-item">
-                <img src="https://f.top4top.io/p_3709ocp404.jpg" alt="Wedding 5">
-            </div>
-             <div class="wedding-item">
-                <img src="https://h.top4top.io/p_3709joyej6.jpg" alt="Wedding 6">
-            </div>
-                <div class="wedding-item">
-                <img src="https://j.top4top.io/p_3710cmupq1.jpg" alt="Wedding 7">
-            </div>
-            <div class="wedding-item">
-                <img src="https://k.top4top.io/p_3710umx5k2.jpg" alt="Wedding 8">
-            </div>
-            <div class="wedding-item">
-                <img src="https://l.top4top.io/p_37108n1r83.jpg" alt="Wedding 9">
-            </div>
-            <div class="wedding-item">
-                <img src="https://a.top4top.io/p_371087le04.jpg" alt="Wedding 10">
-            </div>
-            <div class="wedding-item">
-                <img src="https://b.top4top.io/p_3710lsqbp5.jpg" alt="Wedding 11">
-            </div>
-             <div class="wedding-item">
-                <img src="https://c.top4top.io/p_37105tk4q6.jpg" alt="Wedding 12">
-            </div>
-            <div class="wedding-item">
-                <img src="https://d.top4top.io/p_3710nw3ed7.jpg" alt="Wedding 13">
-            </div>
-            <div class="wedding-item">
-                <img src="https://e.top4top.io/p_3710rj2g28.jpg" alt="Wedding 14">
-            </div>
-            <div class="wedding-item">
-                <img src="https://f.top4top.io/p_3710qngfz9.jpg" alt="Wedding 15">
-            </div>
-            <div class="wedding-item">
-                <img src="https://g.top4top.io/p_37103bxis10.jpg" alt="Wedding 16">
-            </div>
-             <div class="wedding-item">
-                <img src="https://b.top4top.io/p_3710pm8jk1.jpg" alt="Wedding 17">
-              </div>
-                <div class="wedding-item">
-                <img src="https://c.top4top.io/p_3710vmeb92.jpg" alt="Wedding 18">
-            </div>
-            <div class="wedding-item">
-                <img src="https://c.top4top.io/p_37095uosn1.jpg" alt="Wedding 19">
-            </div>
-            <div class="wedding-item">
-                <img src="https://e.top4top.io/p_37102xuj24.jpg" alt="Wedding 20">
-            </div>
-            <div class="wedding-item">
-                <img src="https://g.top4top.io/p_37107dc886.jpg" alt="Wedding 21">
+            <div class="wedding-item"><img src="https://d.top4top.io/p_37103iu0w3.jpg" alt="1"></div>
+            <div class="wedding-item"><img src="https://d.top4top.io/p_3709n6qab2.jpg" alt="2"></div>
+            <div class="wedding-item"><img src="https://e.top4top.io/p_370919pvb3.jpg" alt="3"></div>
+            <div class="wedding-item"><img src="https://g.top4top.io/p_370907clz1.jpg" alt="4"></div>
+            <div class="wedding-item"><img src="https://f.top4top.io/p_3709ocp404.jpg" alt="5"></div>
+            <div class="wedding-item"><img src="https://h.top4top.io/p_3709joyej6.jpg" alt="6"></div>
+            <div class="wedding-item"><img src="https://j.top4top.io/p_3710cmupq1.jpg" alt="7"></div>
+            <div class="wedding-item"><img src="https://k.top4top.io/p_3710umx5k2.jpg" alt="8"></div>
+            <div class="wedding-item"><img src="https://l.top4top.io/p_37108n1r83.jpg" alt="9"></div>
+            <div class="wedding-item"><img src="https://a.top4top.io/p_371087le04.jpg" alt="10"></div>
+            <div class="wedding-item"><img src="https://b.top4top.io/p_3710lsqbp5.jpg" alt="11"></div>
+            <div class="wedding-item"><img src="https://c.top4top.io/p_37105tk4q6.jpg" alt="12"></div>
+            <div class="wedding-item"><img src="https://d.top4top.io/p_3710nw3ed7.jpg" alt="13"></div>
+            <div class="wedding-item"><img src="https://e.top4top.io/p_3710rj2g28.jpg" alt="14"></div>
+            <div class="wedding-item"><img src="https://f.top4top.io/p_3710qngfz9.jpg" alt="15"></div>
+            <div class="wedding-item"><img src="https://g.top4top.io/p_37103bxis10.jpg" alt="16"></div>
+            <div class="wedding-item"><img src="https://b.top4top.io/p_3710pm8jk1.jpg" alt="17"></div>
+            <div class="wedding-item"><img src="https://c.top4top.io/p_3710vmeb92.jpg" alt="18"></div>
+            <div class="wedding-item"><img src="https://c.top4top.io/p_37095uosn1.jpg" alt="19"></div>
+            <div class="wedding-item"><img src="https://e.top4top.io/p_37102xuj24.jpg" alt="20"></div>
+            <div class="wedding-item"><img src="https://g.top4top.io/p_37107dc886.jpg" alt="21"></div>
         </div>
     </div>
     <p style="text-align:center; color:#666; font-size:0.8rem;">(لا تنسى ذكر الله ماشاءالله لاقوة إلا بالله)</p>
 </section>
 
-<section id="weddins" style="background: #5901014f;">
-    <h2> </h2>
+<section id="weddins_scroller" style="background: #5901014f;">
     <div class="scroller-container">
         <div class="arrow arrow-left" onclick="scrollSide('wed-scroll', -300)">❮</div>
         <div class="gallery-wrap" id="wed-scroll">
@@ -366,7 +297,7 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
             <img src="https://e.top4top.io/p_3710n32a710.jpg" onclick="openLightbox(this.src)">
             <img src="https://a.top4top.io/p_371050lvr1.jpg" onclick="openLightbox(this.src)">
             <img src="https://b.top4top.io/p_37108xm5k2.jpg" onclick="openLightbox(this.src)">
-           <img src="https://e.top4top.io/p_37109k8mz4.jpg" onclick="openLightbox(this.src)">
+            <img src="https://e.top4top.io/p_37109k8mz4.jpg" onclick="openLightbox(this.src)">
             <img src="https://f.top4top.io/p_3710txu7c5.jpg" onclick="openLightbox(this.src)">
             <img src="https://g.top4top.io/p_371087lz16.jpg" onclick="openLightbox(this.src)">
             <img src="https://h.top4top.io/p_3710m7v827.jpg" onclick="openLightbox(this.src)">
@@ -423,37 +354,30 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
         <div class="pricing-card"><h3>الباقة الفضية</h3><p>حتى 250 شخص - ضيافة عربية أصيلة</p></div>
         <div class="pricing-card"><h3>الباقة البرونزية</h3><p>حتى 150 شخص - ضيافة أساسية بجودة عالية</p></div>
     </div>
+
     <div class="stats-section">
-    <div class="stat-item">
-        <span class="stat-number" data-target="1367">0</span>
-        <span class="stat-label">المناسبات المنجزة</span>
+        <div class="stat-item">
+            <span class="stat-number" data-target="1367">0</span>
+            <span class="stat-label">المناسبات المنجزة</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="1240">0</span>
+            <span class="stat-label">عميل سعيد</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="13">0</span>
+            <span class="stat-label">سنوات خبرة</span>
+        </div>
     </div>
-    <div class="stat-item">
-        <span class="stat-number" data-target="1240">0</span>
-        <span class="stat-label">عميل سعيد</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number" data-target="13">0</span>
-        <span class="stat-label">سنوات خبرة</span>
-    </div>
-</div>
-    <h2 style="margin-top: 50px;">اراء العملاء  </h2>
+
+    <h2 style="margin-top: 50px;">اراء العملاء</h2>
     <div class="reviews-marquee">
         <div class="marquee-content">
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong> تصوير احترافي وتعامل راقي جداً</div>
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>محمد الحربي:</strong> الضيافة كانت في قمة الروعة</div>
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>خالد البقمي:</strong> إبداع في التغطية وسرعة في الإنجاز</div>
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>سلطان العتيبي:</strong> عمل يشكرون عليه وبيض الله وجيههم</div>
-           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong> خالد الأحمري:</strong> المكان جدا رايع ونشكرهم على جهودهم مع تحيات الأحمري </div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong>تعامل ممتاز وتصوير وجوده ومنتاج رائع فوق الابداع واسعارهم ممتازه</div>
-           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>ابو وليد :</strong> ماشاءالله تبارك الله عندهم احترافيه في المنتاج</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong> تصوير احترافي وتعامل راقي جداً</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>محمد الحربي:</strong> الضيافة كانت في قمة الروعة</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>خالد البقمي:</strong> إبداع في التغطية وسرعة في الإنجاز</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>سلطان العتيبي:</strong> عمل يشكرون عليه وبيض الله وجيههم</div>
-           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong> خالد الأحمري:</strong> المكان جدا رايع ونشكرهم على جهودهم مع تحيات الأحمري </div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong>تعامل ممتاز وتصوير وجوده ومنتاج رائع فوق الابداع واسعارهم ممتازه</div>
-           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>ابو وليد :</strong> ماشاءالله تبارك الله عندهم احترافيه في المنتاج</div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أبو وليد:</strong> ماشاءالله تبارك الله عندهم احترافية</div>
         </div>
     </div>
 </section>
@@ -462,20 +386,15 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <div class="footer-logo-main">
         <img src="https://f.top4top.io/p_3707jruwm1.png" alt="شعار تراث البادية">
     </div>
-
     <div class="footer-social-title">تواصل معنا</div>
-    
     <div class="social-links">
-        <a href="https://maps.app.goo.gl/FUMtzVwAfr3G8wHy5" title="موقعنا على الخريطة" target="_blank">
-            <i class="fas fa-location-dot"></i>
-        </a>
+        <a href="https://maps.app.goo.gl/FUMtzVwAfr3G8wHy5" title="خريطة" target="_blank"><i class="fas fa-location-dot"></i></a>
         <a href="https://www.youtube.com/@TBMedia360" title="يوتيوب"><i class="fab fa-youtube"></i></a>
         <a href="https://www.instagram.com/tb55515/" title="انستقرام"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/tb55515" title="تويتر (X)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://x.com/tb55515" title="X"><i class="fab fa-x-twitter"></i></a>
         <a href="https://www.tiktok.com/@tb55515" title="تيك توك"><i class="fab fa-tiktok"></i></a>
     </div>
-
-    <p style="margin-top: 40px; font-size: 0.8rem; color: #555;">© 2026 تراث البادية الأعلامية  - جميع الحقوق محفوظة</p>
+    <p style="margin-top: 40px; font-size: 0.8rem; color: #555;">© 2026 تراث البادية الأعلامية - جميع الحقوق محفوظة</p>
 </footer>
 
 <div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img" src=""></div>
@@ -486,7 +405,6 @@ function toggleAbout() { document.getElementById('aboutModal').classList.toggle(
 function scrollSide(id, dist){ document.getElementById(id).scrollBy({left: dist, behavior: 'smooth'}); }
 function openLightbox(src) { document.getElementById('lightbox-img').src = src; document.getElementById('lightbox').style.display = 'flex'; }
 
-// وظيفة العداد المتحرك
 const counters = document.querySelectorAll('.stat-number');
 const speed = 200;
 
@@ -494,11 +412,10 @@ const startCounters = () => {
     counters.forEach(counter => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
+            const countValue = +counter.innerText.replace('+', '');
             const inc = target / speed;
-
-            if (count < target) {
-                counter.innerText = Math.ceil(count + inc);
+            if (countValue < target) {
+                counter.innerText = Math.ceil(countValue + inc);
                 setTimeout(updateCount, 10);
             } else {
                 counter.innerText = target + "+";
@@ -508,7 +425,6 @@ const startCounters = () => {
     });
 };
 
-// تشغيل العداد عند الوصول إليه بالسكروول
 const observer = new IntersectionObserver((entries) => {
     if(entries[0].isIntersecting) {
         startCounters();
@@ -516,11 +432,13 @@ const observer = new IntersectionObserver((entries) => {
     }
 }, { threshold: 0.5 });
 
-observer.observe(document.querySelector('.stats-section'));
+if(document.querySelector('.stats-section')) {
+    observer.observe(document.querySelector('.stats-section'));
+}
 </script>
 
 </body>
-
 </html>
+
 
 
