@@ -3,8 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>تراث البادية - الأعلامية</title>
+<title>تراث البادية الإعلامية | توثيق وأصالة</title>
 
+<meta name="description" content="تراث البادية الإعلامية - المؤسسة الرائدة في تغطية وتصوير المناسبات والفعاليات والضيافة العربية في المملكة العربية السعودية. توثيق إبداعي بأعلى معايير الجودة.">
+<meta name="keywords" content="تراث البادية، تصوير مناسبات، تغطية فعاليات، ضيافة عربية، تصوير درونات، مونتاج فيديو">
+<link rel="canonical" href="https://turathalbadia.com/">
+
+<meta property="og:title" content="تراث البادية الإعلامية">
+<meta property="og:description" content="نوثق لحظاتكم بأعلى معايير الجودة - تصوير، مونتاج، وضيافة.">
+<meta property="og:image" content="images/logo.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -44,6 +54,7 @@ nav a:hover{color:var(--gold)}
   display:flex; align-items:center; justify-content:center;
   text-align:center; overflow:hidden;
 }
+/* تحسين الفيديو: preload="metadata" لتسريع الصفحة */
 .hero video{ position:absolute; width:100%; height:100%; object-fit:cover; z-index: 1;}
 .overlay{ position:absolute; inset:0; background: linear-gradient(to bottom, transparent, var(--dark)); z-index: 2;}
 .hero-content{ position:relative; z-index:3; }
@@ -158,11 +169,11 @@ h2{text-align:center; margin-bottom:30px; color:var(--gold); font-size: 1.8rem;}
     padding: 12px 25px; border-radius: 50px; white-space: nowrap;
     display: flex; align-items: center; gap: 10px; font-size: 0.9rem;
 }
-@keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(50%); } }
+@keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 /* ===== Footer ===== */
-footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-top: 1px solid var(--gold); }
-.footer-logo-main img { max-width: 220px; filter: drop-shadow(0 0 15px rgba(235, 233, 233, 0.485)); margin-bottom: 35px; }
+footer { text-align: center; padding: 50px 8% 30px; background: #1c0202; border-top: 1px solid var(--gold); }
+.footer-logo-main img { max-width: 600px; filter: drop-shadow(0 0 15px rgba(235, 233, 233, 0.485)); margin-bottom: 35px; }
 .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .social-links a {
     width: 55px; height: 55px; background: var(--glass); border: 1px solid var(--gold);
@@ -205,7 +216,9 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
 </nav>
 
 <section class="hero">
-<video autoplay muted loop playsinline><source src="تراث البادية الإعلامية.mp4" type="video/mp4"></video>
+<video autoplay muted loop playsinline preload="metadata">
+    <source src="تراث البادية الإعلامية.mp4" type="video/mp4">
+</video>
 <div class="overlay"></div>
 <div class="hero-content">
 <h1>نوثق لحظاتكم بأعلى معاير الجودة</h1>
@@ -241,16 +254,16 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <h2>من أعمالنا (YouTube)</h2>
     <div class="youtube-grid">
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/oNJgGB5wTHc?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/oNJgGB5wTHc?rel=0" allowfullscreen></iframe>
         </div>
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/HG5hjkxwJpA?si=88TmwEdTOa6fWwK1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/tVkXKKQ_-fg?rel=0" allowfullscreen></iframe>
         </div>
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/BTzYWxEMO5o?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/BTzYWxEMO5o?rel=0" allowfullscreen></iframe>
         </div>
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/J1C9Uyxq9q4?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/J1C9Uyxq9q4?rel=0" allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -259,27 +272,29 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <h2>معرض المناسبات</h2>
     <div class="wedding-container">
         <div class="wedding-strip">
-            <div class="wedding-item"><img src="https://d.top4top.io/p_37103iu0w3.jpg" alt="1"></div>
-            <div class="wedding-item"><img src="https://d.top4top.io/p_3709n6qab2.jpg" alt="2"></div>
-            <div class="wedding-item"><img src="https://e.top4top.io/p_370919pvb3.jpg" alt="3"></div>
-            <div class="wedding-item"><img src="https://g.top4top.io/p_370907clz1.jpg" alt="4"></div>
-            <div class="wedding-item"><img src="https://f.top4top.io/p_3709ocp404.jpg" alt="5"></div>
-            <div class="wedding-item"><img src="https://h.top4top.io/p_3709joyej6.jpg" alt="6"></div>
-            <div class="wedding-item"><img src="https://j.top4top.io/p_3710cmupq1.jpg" alt="7"></div>
-            <div class="wedding-item"><img src="https://k.top4top.io/p_3710umx5k2.jpg" alt="8"></div>
-            <div class="wedding-item"><img src="https://l.top4top.io/p_37108n1r83.jpg" alt="9"></div>
-            <div class="wedding-item"><img src="https://a.top4top.io/p_371087le04.jpg" alt="10"></div>
-            <div class="wedding-item"><img src="https://b.top4top.io/p_3710lsqbp5.jpg" alt="11"></div>
-            <div class="wedding-item"><img src="https://c.top4top.io/p_37105tk4q6.jpg" alt="12"></div>
-            <div class="wedding-item"><img src="https://d.top4top.io/p_3710nw3ed7.jpg" alt="13"></div>
-            <div class="wedding-item"><img src="https://e.top4top.io/p_3710rj2g28.jpg" alt="14"></div>
-            <div class="wedding-item"><img src="https://f.top4top.io/p_3710qngfz9.jpg" alt="15"></div>
-            <div class="wedding-item"><img src="https://g.top4top.io/p_37103bxis10.jpg" alt="16"></div>
-            <div class="wedding-item"><img src="https://b.top4top.io/p_3710pm8jk1.jpg" alt="17"></div>
-            <div class="wedding-item"><img src="https://c.top4top.io/p_3710vmeb92.jpg" alt="18"></div>
-            <div class="wedding-item"><img src="https://c.top4top.io/p_37095uosn1.jpg" alt="19"></div>
-            <div class="wedding-item"><img src="https://e.top4top.io/p_37102xuj24.jpg" alt="20"></div>
-            <div class="wedding-item"><img src="https://g.top4top.io/p_37107dc886.jpg" alt="21"></div>
+            <div class="wedding-item"><img src="images/1.webp" alt="1" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/2.webp" alt="2" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/3.webp" alt="3" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/4.webp" alt="4" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/5.webp" alt="5" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/6.webp" alt="6" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/7.webp" alt="7" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/8.webp" alt="8" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/9.webp" alt="9" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/10.webp" alt="10" loading="lazy"></div>           
+           <div class="wedding-item"><img src="images/11.webp" alt="11" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/12.webp" alt="12" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/13.webp" alt="13" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/14.webp" alt="14" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/15.webp" alt="15" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/16.webp" alt="16" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/17.webp" alt="17" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/18.webp" alt="18" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/19.webp" alt="19" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/20.webp" alt="20" loading="lazy"></div>
+             <div class="wedding-item"><img src="images/21.webp" alt="21" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/22.webp" alt="22" loading="lazy"></div>
+            <div class="wedding-item"><img src="images/23.webp" alt="23" loading="lazy"></div>
         </div>
     </div>
     <p style="text-align:center; color:#666; font-size:0.8rem;">(لا تنسى ذكر الله ماشاءالله لاقوة إلا بالله)</p>
@@ -289,26 +304,29 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <div class="scroller-container">
         <div class="arrow arrow-left" onclick="scrollSide('wed-scroll', -300)">❮</div>
         <div class="gallery-wrap" id="wed-scroll">
-            <img src="https://l.top4top.io/p_37102gxh65.jpg" onclick="openLightbox(this.src)">
-            <img src="https://a.top4top.io/p_371051zhe6.jpg" onclick="openLightbox(this.src)">
-            <img src="https://b.top4top.io/p_3710u8gjl7.jpg" onclick="openLightbox(this.src)">
-            <img src="https://c.top4top.io/p_3710hzmut8.jpg" onclick="openLightbox(this.src)">
-            <img src="https://d.top4top.io/p_371037mwo9.jpg" onclick="openLightbox(this.src)">
-            <img src="https://e.top4top.io/p_3710n32a710.jpg" onclick="openLightbox(this.src)">
-            <img src="https://a.top4top.io/p_371050lvr1.jpg" onclick="openLightbox(this.src)">
-            <img src="https://b.top4top.io/p_37108xm5k2.jpg" onclick="openLightbox(this.src)">
-            <img src="https://e.top4top.io/p_37109k8mz4.jpg" onclick="openLightbox(this.src)">
-            <img src="https://f.top4top.io/p_3710txu7c5.jpg" onclick="openLightbox(this.src)">
-            <img src="https://g.top4top.io/p_371087lz16.jpg" onclick="openLightbox(this.src)">
-            <img src="https://h.top4top.io/p_3710m7v827.jpg" onclick="openLightbox(this.src)">
-            <img src="https://i.top4top.io/p_3710uva3r8.jpg" onclick="openLightbox(this.src)">
-            <img src="https://j.top4top.io/p_37105n2ih9.jpg" onclick="openLightbox(this.src)">
-            <img src="https://k.top4top.io/p_3710qgnjj10.jpg" onclick="openLightbox(this.src)">
-            <img src="https://j.top4top.io/p_37107ee8f1.jpg" onclick="openLightbox(this.src)">
-            <img src="https://k.top4top.io/p_3710wcrzk2.jpg" onclick="openLightbox(this.src)">
-            <img src="https://l.top4top.io/p_37105zhsv3.jpg" onclick="openLightbox(this.src)">
-            <img src="https://a.top4top.io/p_3710mvgep4.jpg" onclick="openLightbox(this.src)">
-            <img src="https://b.top4top.io/p_3710hlczb5.jpg" onclick="openLightbox(this.src)">
+            <img src="images/w1.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w2.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w3.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w4.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w5.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w6.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w7.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w8.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w9.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w10.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w11.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w12.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w13.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w14.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w15.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w16.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w17.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w18.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w19.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w20.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w21.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w22.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/w23.webp" loading="lazy" onclick="openLightbox(this.src)">
         </div>
         <div class="arrow arrow-right" onclick="scrollSide('wed-scroll', 300)">❯</div>
     </div>
@@ -319,10 +337,22 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <div class="scroller-container">
         <div class="arrow arrow-left" onclick="scrollSide('ev-scroll', -300)">❮</div>
         <div class="gallery-wrap" id="ev-scroll">
-            <img src="https://d.top4top.io/p_3707sp0361.png" onclick="openLightbox(this.src)">
-            <img src="https://e.top4top.io/p_3707w3rc82.png" onclick="openLightbox(this.src)">
-            <img src="https://f.top4top.io/p_370784gyx3.png" onclick="openLightbox(this.src)">
-            <img src="https://g.top4top.io/p_3707bdmz24.png" onclick="openLightbox(this.src)">
+            <img src="images/ev1.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev2.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev3.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev4.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev5.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev6.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev7.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev8.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev9.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev10.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev11.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev12.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev13.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev14.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev15.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/ev16.webp" loading="lazy" onclick="openLightbox(this.src)">
         </div>
         <div class="arrow arrow-right" onclick="scrollSide('ev-scroll', 300)">❯</div>
     </div>
@@ -333,16 +363,17 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
     <div class="scroller-container">
         <div class="arrow arrow-left" onclick="scrollSide('hosp-scroll', -300)">❮</div>
         <div class="gallery-wrap" id="hosp-scroll">
-            <img src="https://k.top4top.io/p_3707mxd951.png" onclick="openLightbox(this.src)">
-            <img src="https://b.top4top.io/p_3707g8um83.png" onclick="openLightbox(this.src)">
-            <img src="https://l.top4top.io/p_370752d252.png" onclick="openLightbox(this.src)">
-            <img src="https://c.top4top.io/p_3707huf721.png" onclick="openLightbox(this.src)">
+            <img src="images/h1.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/h2.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/h3.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/h4.webp" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="images/h5.webp" loading="lazy" onclick="openLightbox(this.src)">
         </div>
         <div class="arrow arrow-right" onclick="scrollSide('hosp-scroll', 300)">❯</div>
     </div>
     
     <div style="border-radius: 15px; overflow: hidden; height: 350px; border:1px solid var(--gold); margin-top: 30px;">
-        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+        <video autoplay muted loop playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover;">
             <source src=" الضيافه تراث البادية.mp4" type="video/mp4">
         </video>
     </div>
@@ -370,21 +401,26 @@ footer { text-align: center; padding: 60px 8% 30px; background: #1c0202; border-
         </div>
     </div>
 
-    <h2 style="margin-top: 50px;">اراء العملاء</h2>
+    <h2 style="margin-top: 50px;">آراء العملاء</h2>
     <div class="reviews-marquee">
         <div class="marquee-content">
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong> تصوير احترافي وتعامل راقي جداً</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>محمد الحربي:</strong> الضيافة كانت في قمة الروعة</div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong> ابو عبدالله:</strong> تصوير احترافي وتعامل راقي جداً</div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>محمد سلطان :</strong> الضيافة كانت في قمة الروعة</div>
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>خالد البقمي:</strong> إبداع في التغطية وسرعة في الإنجاز</div>
             <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>سلطان العتيبي:</strong> عمل يشكرون عليه وبيض الله وجيههم</div>
-            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أبو وليد:</strong> ماشاءالله تبارك الله عندهم احترافية</div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أبو وليد:</strong> ماشاءالله تبارك الله  </div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>خالد البقمي:</strong> إبداع في التغطية وسرعة في الإنجاز</div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>سلطان العتيبي:</strong> عمل يشكرون عليه وبيض الله وجيههم</div>
+           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong> خالد الأحمري:</strong> المكان جدا رايع ونشكرهم على جهودهم مع تحيات الأحمري </div>
+            <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>أحمد العتيبي:</strong>تعامل ممتاز وتصوير وجوده ومنتاج رائع فوق الابداع واسعارهم ممتازه</div>
+           <div class="review-item"><i class="fas fa-star" style="color:#ffd700"></i> <strong>ابو بدر محسن :</strong> ماشاءالله تبارك الله عندهم احترافيه في المنتاج</div>
         </div>
     </div>
 </section>
 
 <footer>
     <div class="footer-logo-main">
-        <img src="https://f.top4top.io/p_3707jruwm1.png" alt="شعار تراث البادية">
+        <img src="images/logo.webp" alt="شعار تراث البادية" loading="lazy">
     </div>
     <div class="footer-social-title">تواصل معنا</div>
     <div class="social-links">
@@ -405,9 +441,9 @@ function toggleAbout() { document.getElementById('aboutModal').classList.toggle(
 function scrollSide(id, dist){ document.getElementById(id).scrollBy({left: dist, behavior: 'smooth'}); }
 function openLightbox(src) { document.getElementById('lightbox-img').src = src; document.getElementById('lightbox').style.display = 'flex'; }
 
+// كود العدادات التلقائي
 const counters = document.querySelectorAll('.stat-number');
 const speed = 200;
-
 const startCounters = () => {
     counters.forEach(counter => {
         const updateCount = () => {
@@ -417,26 +453,27 @@ const startCounters = () => {
             if (countValue < target) {
                 counter.innerText = Math.ceil(countValue + inc);
                 setTimeout(updateCount, 10);
-            } else {
-                counter.innerText = target + "+";
-            }
+            } else { counter.innerText = target + "+"; }
         };
         updateCount();
     });
 };
-
 const observer = new IntersectionObserver((entries) => {
-    if(entries[0].isIntersecting) {
-        startCounters();
-        observer.disconnect();
-    }
+    if(entries[0].isIntersecting) { startCounters(); observer.disconnect(); }
 }, { threshold: 0.5 });
-
-if(document.querySelector('.stats-section')) {
-    observer.observe(document.querySelector('.stats-section'));
-}
+if(document.querySelector('.stats-section')) { observer.observe(document.querySelector('.stats-section')); }
 </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
